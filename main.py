@@ -11,7 +11,7 @@ FILE_ID = "https://drive.google.com/1oJLzUAjcQXvB4byMLHHpnlAWrIUfIE3d"
 @st.cache_resource
 def load_model():
     if not os.path.exists(MODEL_PATH):
-        url = f"https://drive.google.com/uc?id={d/1oJLzUAjcQXvB4byMLHHpnlAWrIUfIE3d}"
+        url = f"https://drive.google.com/uc?id={'1oJLzUAjcQXvB4byMLHHpnlAWrIUfIE3d'}"
         gdown.download(url, MODEL_PATH, quiet=False)
     model = tf.keras.models.load_model(MODEL_PATH)
     return model
